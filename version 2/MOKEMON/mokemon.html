@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>DAYAMON</title>
+        <link rel="stylesheet" href="./styles.css">
+        
+    </head>
+    <body>
+        <section id="seleccionar-mascota">
+        <h1 class="titulo" >DAYAMON!💧🔥☘</h1>
+        <h2 class="subtitulo">Selecciona tu mascota</h2>
+
+        <div class="tarjetas">
+            
+            
+            <label class='tarjetaDeDayamon' for = "Squirtle"> 
+                <p>Squirtle </p>
+                <img src="https://64.media.tumblr.com/ca7bd49d1d414f1ccdaa4950094b6754/tumblr_n28v8gQLkH1rcgdmto3_250.gifv" alt="Squirtle">
+            </label>
+                <input type ="radio" name="mascota" id="Squirtle"/><br>
+            <label class='tarjetaDeDayamon' for="Charmander">
+                <p>Charmander </p>
+                <img src="https://64.media.tumblr.com/6035bf1768e0c05901193ac1129df39d/tumblr_n28v8gQLkH1rcgdmto2_250.gifv" alt="Charmander">
+            </label>
+                <input type ="radio" name="mascota" id="Charmander"/><br>
+            <label class='tarjetaDeDayamon' for="Bulbasaur">
+                <p>Bulbasaur </p>
+                <img src="https://64.media.tumblr.com/4a724672ff10c9886c94434a00954a99/tumblr_n28v8gQLkH1rcgdmto1_250.gifv" alt="Bulbasaur">
+            </label> 
+                <input type ="radio" name="mascota" id="Bulbasaur"><br>
+        </div>
+
+            <button id="boton-mascota">Seleccionar</button>        
+            
+        </section>
+
+
+        <section id="ataque">
+            <h2>Selecciona tu ataque</h2>
+            <h1 class="title" id="titulo">DAYAMON!💧🔥☘</h1>
+
+
+            <p>Tu mascota<span id="mascota-jugador"> </span> tiene <span id="vidas-jugador">3</span> vidas</p>
+            <p>Las mascotas <span id="mascota-enemigo"> </span> del enemigo tiene <span id="vidas-enemigo">3</span> vidas</p>
+            <p>
+                <button id="boton-fuego">Fuego 🔥</button>
+                <button id="boton-agua">agua  💧</button>
+                <button id="boton-planta">planta ☘</button>
+            </p>
+        </section>
+
+        <selection id="mensaje"></selection>
+
+        <section id="reiniciar">
+            <button id="boton-reinciar">Reiniciar</button>
+        </section>
+        <script src="./js/codigo.js"></script>
+    </body>
+
+</html>

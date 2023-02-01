@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>DAYAMON</title>
+        <link rel="stylesheet" href="./styles.css">
+        
+    </head>
+    <body class="Margen" id="fondo">
+        
+        <h1 class="title" id="titulo">DAYAMON!💧🔥☘</h1>
+        <section id="mascota">
+            <h2>Selecciona tu mascota</h2>
+            <label for = "Squirtle">Squirtle --> Agua</label>
+                <input type ="radio" name="mascota" id="Squirtle"/><br>
+            <label for="Charmander">Charmander --> Fuego</label>
+                <input type ="radio" name="mascota" id="Charmander"/><br>
+            <label for="Bulbasaur">Bulbasaur --> Planta</label> 
+                <input type ="radio" name="mascota" id="Bulbasaur"><br>
+            <button id="boton-mascota">Seleccionar</button>
+            
+            
+        </section>
+
+        <section id="ataque">
+            <h2>Selecciona tu ataque</h2>
+
+            <p>Tu mascota<span id="mascota-jugador"> </span> tiene <span id="vidas-jugador">3</span> vidas</p>
+            <p>Las mascotas <span id="mascota-enemigo"> </span> del enemigo tiene <span id="vidas-enemigo">3</span> vidas</p>
+            <p>
+                <button id="boton-fuego">Fuego 🔥</button>
+                <button id="boton-agua">agua  💧</button>
+                <button id="boton-planta">planta ☘</button>
+            </p>
+        </section>
+
+        <selection id="mensaje"></selection>
+
+        <section id="reiniciar">
+            <button id="boton-reinciar">Reiniciar</button>
+        </section>
+        <script src="./js/codigo.js"></script>
+    </body>
+
+
+
+
+
+</html>

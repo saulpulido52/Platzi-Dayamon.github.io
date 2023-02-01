@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.cdnfonts.com/css/8bit-wonder');
+body{
+    font-family: 'Press Start 2P', cursive;
+    background-color: #395B64 ;
+}
+
+
+
+
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.titulo{
+    width: 500px;
+    height: 50px;
+    color:darkred;
+    font-size: 32px;
+    
+}
+.subtitulo{
+    color: #E7F6F2;
+    font-size: 24px;
+
+
+}
+.tarjetas {
+    display: flex;
+    gap: 10px;
+  }
+.tarjetaDeDayamon{
+    width: 250px;
+    height: 100px;
+    background: #A5C9CA;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid firebrick;
+    font-size: 16px;
+    border-radius: 20px;
+    display: flex;
+}
+.tarjetaDeDayamon img{
+    width: 110px;
+}
+
+
+#boton-mascota{
+    width: 170px;
+    height: 48px;
+    border-radius: 20px;
+    background: #E9D5CA;
+    border: 3px solid black;
+    font-family: '8BIT WONDER', sans-serif;
+
+}
+#boton-reinciar{
+    width: 88px;
+    height: 48px;
+    background: #E7F6F2;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+input{
+    display: none;
+}

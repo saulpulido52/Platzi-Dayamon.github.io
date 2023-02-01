@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>DAYAMON</title>
+        <link rel="stylesheet" href="./styles.css">
+        
+    </head>
+    <body>
+        <section id="seleccionar-mascota">
+        <h1 class="titulo" >Dayamon!</h1>
+        <h2 class="subtitulo">Selecciona tu mascota</h2>
+
+        <div class="tarjetas">
+            
+            <input type ="radio" name="mascota" id="Squirtle"/>
+            <label class='tarjetaDeDayamon' for = "Squirtle"> 
+                <p>Squirtle </p>
+                <img src="https://64.media.tumblr.com/ca7bd49d1d414f1ccdaa4950094b6754/tumblr_n28v8gQLkH1rcgdmto3_250.gifv" alt="Squirtle">
+            </label>
+             
+            <input type ="radio" name="mascota" id="Charmander"/>
+            <label class='tarjetaDeDayamon' for="Charmander">
+                <p>Charmander </p>
+                <img src="https://64.media.tumblr.com/6035bf1768e0c05901193ac1129df39d/tumblr_n28v8gQLkH1rcgdmto2_250.gifv" alt="Charmander">
+            </label>
+            
+            <input type ="radio" name="mascota" id="Bulbasaur">
+            <label class='tarjetaDeDayamon' for="Bulbasaur">
+                <p>Bulbasaur </p>
+                <img src="https://64.media.tumblr.com/4a724672ff10c9886c94434a00954a99/tumblr_n28v8gQLkH1rcgdmto1_250.gifv" alt="Bulbasaur">
+            </label> 
+                
+        </div>
+            <button id="boton-mascota">Seleccionar</button>        
+            
+        </section>
+
+        <section id="ataque">
+            <h1  id="titulo2">Dayamon!</h1>
+            <h2 class="subtitulo">Selecciona tu ataque</h2>
+
+            <div>
+                    <button id="boton-fuego" class="boton-ataque">Fuego 🔥</button>
+                    <button id="boton-agua"  class="boton-ataque">agua  💧</button>
+                    <button id="boton-planta" class="boton-ataque">planta ☘</button>
+            </div>
+            <div>
+                <selection id="mensaje">
+                    <p id="resultado">Que la suerte te acompañe</p>
+                    <section id="reiniciar">
+                        <button id="boton-reinciar">Reiniciar
+                            <img src="https://media.tenor.com/NLSitkgRZHYAAAAi/pikachu-wave.gif" alt="boton-reinciar">
+                        </button>
+                    </section>
+                </selection>
+            </div>
+
+            <div class="ataques">
+                <div class="ataques-jugador">
+                    <p id="vidas-jugador">3</p>
+                    <p id="mascota-jugador"> </p>
+                    <p id="imagen-jugador"></p>
+                    <div id="ataque-del-jugador"></div>
+                </div>
+                <div class="ataques-enemigo">
+                    <p id="vidas-enemigo">3</p>
+                    <p id="mascota-enemigo"> </p>
+                    <p id="imagen-enemigo"></p>
+                    <div id="ataque-del-enemigo"></div>  
+                </div>        
+            </div>      
+        </section>     
+        <script src="./js/codigo.js"></script>
+    </body>
+
+</html>
