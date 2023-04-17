@@ -1,38 +1,60 @@
+<!DOCTYPE html>
 <html>
-	<h1>Mi primer pagina web</h1>
-<head>
-	<meta charset="utf-8"/>
-	<title> Mi primer pagina</title>
-	<script>
-	let nombre =''
-	nombre = prompt('cual es tu nombre?')
-	alert("Bienvenido " + nombre)
-	</script>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Dayamon!</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-	Es fácil, imagina que tienes una hojita en blanco y quieres empezar a añadir cositas, 
-	en este caso, usamos HTML para empezar a añadir cositas en esa hojita en blanco ??.
-	</p>
-	Siguiendo el ejemplo de la clase, 
-	si yo quiero agregar un título a mi página web ¿qué debería hacer? 
-	Pues por medio de HTML usar la etiqueta correspondiente para añadir ese título ??, simplemente hay que decirle:
-	</p>
-	'h1' Este será mi título ??'/h1'
-	</p>
-	Ahora imagina que quieres agregar un párrafo… 
-	¡también podemos! Solamente hay que decirle a HTML que me agregue un párrafo, así ??:
-	</p>
-	Aquí adentro puedo poner mi párrafo ?? 'p' y '/p'
-	</p>
-	¡Así de fácil! Simplemente tienes que decirle a HTML qué es lo que quieres agregar y él lo agregará.
- 	HTML es como un robotcito que siempre te hará caso y agregará todo lo que quieras ??.
-	</p>
-
-	¿Y cuál es la diferencia entre 'h1' y 'title'? ??
-	</p>
-	Bueno, 'title' solamente lo usaremos para definir el título de la pestaña en nuestro navegador, 
-	solo sirve para eso, esta etiqueta nunca se pintará en nuestra página web, solo en la pestaña del navegador. 
-	Por otra parte, 'h1' sí se pintará dentro de nuestra página web y esta etiqueta la podemos usar para poner títulos visibles dentro de la misma ??.
-</body>
+  <body onload="imagen()">
+    <section id="seleccionar-mascota">
+      <h1 class="titulo">Dayamon</h1>
+      <h2 class="subtitulo">Elige tu mascota:</h2>
+      <div id="contenedorTarjetas" class="tarjetas"></div>
+      <button id="boton-mascota">Seleccionar</button>
+    </section>
+    <section id="ver-mapa">
+      <h2 class="subtitulo">Recorre el Mapa</h2>
+      <canvas id="mapa"></canvas>
+      <button onmouseup="detenerMovimiento()" onmousedown="moverArriba()">
+        Arriba
+      </button>
+      <div>
+        <button onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">
+          Izquierda
+        </button>
+        <button onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">
+          Abajo
+        </button>
+        <button onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">
+          Derecha
+        </button>
+      </div>
+    </section>
+    <section id="seleccionar-ataque">
+      <h1 class="titulo">Dayamon</h1>
+      <h2 class="subtitulo">Elige tu ataque:</h2>
+      <div id="contenedorAtaques" class="tarjetas-ataques"></div>
+      <div id="mensajes">
+        <p id="resultado">Mucha suerte</p>
+        <section id="reiniciar">
+          <button id="boton-reiniciar">Reiniciar</button>
+        </section>
+      </div>
+      <div class="ataques">
+        <div class="ataques-jugador">
+          <p id="vidas-jugador">0</p>
+          <p id="mascota-jugador"></p>
+          <div id="ataques-del-jugador"></div>
+        </div>
+        <div class="ataques-enemigo">
+          <p id="vidas-enemigo">0</p>
+          <p id="mascota-enemigo"></p>
+          <div id="ataques-del-enemigo"></div>
+        </div>
+      </div>
+    </section>
+    <script src="./js/codigo.js"></script>
+  </body>
 </html>
