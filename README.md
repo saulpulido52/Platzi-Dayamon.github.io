@@ -12,7 +12,7 @@ Este es un proyecto de juego de batalla de dayamones desarrollado con HTML, CSS 
 # Cómo instalar
 - Clona este repositorio en tu computadora:
 ```sh
-git clone https://github.com/tu-usuario/batalla-de-dayamones.git
+git clone https://github.com/saulpulido52/Platzi-Dayamon.github.io
 ```
 - Abre el archivo index.html en tu navegador web.
 # Dependencias.
